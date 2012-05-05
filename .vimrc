@@ -1,8 +1,7 @@
-:set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 let g:AutoClosePreservDotReg = 0
 if $COLORTERM == 'gnome-terminal'
-  set term=gnome-256color
+  set term=xterm-256color
   colorscheme railscasts-term
 else
   colorscheme railscasts 
@@ -20,3 +19,4 @@ call pathogen#helptags()
 set runtimepath+=$HOME/.vim/vim-haml
 :set omnifunc=csscomplete#CompleteCSS
 :imap <c-space> <c-x><c-o>
+:set nocompatible
