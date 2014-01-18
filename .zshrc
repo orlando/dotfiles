@@ -20,7 +20,7 @@ compinit
 # End of lines added by compinstall
 
 # custom stuff
-PROMPT='🎄 🎅  %n%~ '
+PROMPT='👾 👾 👾  %n%~ '
  
 case $TERM in
     xterm*)
@@ -34,4 +34,5 @@ bindkey '^R' history-incremental-search-backward
 export SSL_CERT_FILE=/etc/pki/tls/cert.pem
 
 # BOXEN
+export GITHUB_API_TOKEN=21f476f84645ae66ad805de2419073543eea44bb
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
