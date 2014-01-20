@@ -1,0 +1,4 @@
+/*jslint browser: true, regexp: true, indent: 2, nomen: true, maxerr: 1000 */
+/*global jQuery, $ */
+
+/* vim: set ft=javascript: */
