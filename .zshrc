@@ -48,4 +48,9 @@ chpwd() {
   eval "`ondir \"$OLDPWD\" \"$PWD\"`"
 }
 
-export PATH=$PATH:/usr/local/bin
+# GAE
+export GAE="/usr/local/google_appengine"
+export PYTHONPATH="$PYTHONPATH:$GAE:$GAE/lib/django-1.5"
+export PATH="$PATH:$GAE/lib/django-1.5/django/bin/"
+
+export PATH=$PATH:/usr/local/bin:/usr/bin
