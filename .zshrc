@@ -1,3 +1,6 @@
+# ADD bin and sbin to path
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -31,7 +34,6 @@ esac
 ulimit -n 10000
 
 bindkey '^R' history-incremental-search-backward
-export SSL_CERT_FILE=/etc/pki/tls/cert.pem
 
 # GIT
 export GIT_MERGE_AUTOEDIT=no
@@ -39,9 +41,8 @@ export GIT_MERGE_AUTOEDIT=no
 # PYTHON
 export VIRTUALENVWRAPPER_PYTHON=/opt/boxen/homebrew/bin/python
 
-# BOXEN
-export GITHUB_API_TOKEN=
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+# GITHUB API
+export GITHUB_API_TOKEN=2698ba2f45cbf2e971c72ccaddab50275eac1712
 
 # ONDIR
 chpwd() {
@@ -53,4 +54,14 @@ export GAE="/usr/local/google_appengine"
 export PYTHONPATH="$PYTHONPATH:$GAE:$GAE/lib/django-1.5"
 export PATH="$PATH:$GAE/lib/django-1.5/django/bin/"
 
-export PATH=$PATH:/usr/local/bin:/usr/bin
+# AUTOCOMPLETITION
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+# DOCKER
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/orlando/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
