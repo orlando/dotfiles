@@ -1,7 +1,12 @@
 hi def link jsObjectKey Label
 filetype plugin on
 
-colorscheme railscasts
+if has("gui_macvim")
+  colorscheme railscasts
+else
+  colorscheme railscasts256
+endif
+
 set guifont=Bitstream\ Vera\ Sans\ Mono:h13
 
 if janus#is_plugin_enabled("ctrlp")
