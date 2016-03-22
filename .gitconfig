@@ -1,12 +1,8 @@
 [user]
 	name = Orlando Del Aguila
-	email = orlando@delagui.la
-
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
+	email = orlando@hashlabs.com
 
 [core]
-	excludesfile = /opt/boxen/config/git/gitignore
 	mergeoptions = --no-edit
 
 [hub]
